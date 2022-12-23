@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&family=Yaldevi&display=swap');
 
 :root {
     --green: #a3de83;
@@ -6,10 +6,11 @@
     --dark-blue: #558c9c;
     --yellow: #f7f39a;
     --black: #323232;
-    --box-shadow: box-shadow: 10px ins;
+    --box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.105) inset;
     --border: 3px solid #323232;
     --outline: 5px double rgba(50,50,50,0.98);
     --outline-hover: 8px double #A3DE83;
+    --other-font: 'Yaldevi', sans-serif;
 }
 
 
@@ -42,7 +43,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 4%;
-    background: #fff;
+    background: #a3de8320;
     box-shadow: var(--box-shadow);
 }
 
@@ -93,13 +94,14 @@ body {
     position: absolute;
     top: 110%; right: 2rem;
     max-width: 50rem;
+    width: 40rem;
     height: 4rem;
     background-color: #fff;
     border-radius: .5rem;
     overflow: hidden;
     display: flex;
     align-items: center;
-    box-shadow: var(--box-shadow);
+    border: 2px solid var(--green);
 }
 
 .header .search-form input  {
@@ -110,13 +112,13 @@ body {
     /* text-indent: 4px; */
     font-size: 1.6rem;
     color: var(--black);
-    padding: 0 1rem;
-
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .header .search-form label {
     font-size: 1.5rem;
-    /* padding-right: 1.5rem; */
+    padding-left: 0.8rem;
     color: var(--black);
     cursor: pointer;
 }
