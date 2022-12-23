@@ -6,7 +6,7 @@
     --dark-blue: #558c9c;
     --yellow: #f7f39a;
     --black: #323232;
-    --box-shadow: box-shadow: 0px 0px 6px 4px rgba(163,222,131,0.55);
+    --box-shadow: box-shadow: 0px 0px 10px 4px rgba(163,222,131,0.55);
     --border: 3px solid #323232;
     --outline: 5px double rgba(50,50,50,0.98);
     --outline-hover: 8px double #A3DE83;
@@ -41,13 +41,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 9%;
+    padding: 2rem 4%;
     background: #fff;
     box-shadow: var(--box-shadow);
 }
 
 .header .logo {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bolder;
     color: var(--black);
 }
@@ -65,4 +65,26 @@ body {
 .header .navbar a:hover {
     font-weight: 600;
     color: var(--dark-blue);
+}
+
+.header .icons div {
+    height: 3.5rem;
+    width: 3.5rem;
+    line-height: 3.5rem;
+    border-radius: 7px;
+    background-color: #eee;
+    color: var(--black);
+    font-size: 2rem;
+    margin-right: 0.3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header .icons div:hover {
+    background: var(--blue);
+    color: #fff;
+}
+
+#menu-btn {
+    display: none;
 }
