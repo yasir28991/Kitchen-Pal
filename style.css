@@ -35,6 +35,22 @@ body {
     background-color: #eee;
 }
 
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .5rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background-color: var(--blue);
+    color: #fff;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--dark-blue);
+}
+
 .header {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -92,7 +108,7 @@ body {
 
 .header .search-form {
     position: absolute;
-    top: 110%; right: 2rem;
+    top: 110%; right: -110%;
     max-width: 50rem;
     width: 40rem;
     height: 4rem;
@@ -104,11 +120,17 @@ body {
     border: 2px solid var(--green);
 }
 
+.header .search-form.active {
+    right: 2rem;
+    transition: .3s linear;
+}
+
 .header .search-form input  {
     height: 100%;
     width: 100%;
     background: none;
     text-transform: none;
+    /* font-family: var(--other-font); */
     /* text-indent: 4px; */
     font-size: 1.6rem;
     color: var(--black);
@@ -125,4 +147,74 @@ body {
 
 .header .search-form label:hover {
     color: var(--blue);
+}
+
+.header .shopping-cart {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 110%; right: -110%;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 35rem;
+    background-color: #fff;
+}
+
+.header .shopping-cart.active {
+    right: 2rem;
+    transition: .3s linear;
+}
+
+.header .shopping-cart .box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.header .shopping-cart .box img {
+    height: 10rem;
+    width: 110px;
+} 
+
+.header .shopping-cart .box .fa-trash {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%; right: 2rem;
+    cursor: pointer;
+    color: var(--blue);
+    transform: translateY(-50%);
+}
+
+.header .shopping-cart .box .fa-trash:hover {
+    color: red;
+}
+
+.header .shopping-cart .box .content h3{
+    color: var(--black);
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.header .shopping-cart .box .content span {
+    color: var(--black);
+    font-size: 1.3rem;
+}
+
+.header .shopping-cart .box .content .quantity {
+    padding-left: 1rem;
+}
+
+.header .shopping-cart .total {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: var(--black);
+}
+
+
+.header .shopping-cart .btn {
+    align-self: center;
 }
