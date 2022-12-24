@@ -339,4 +339,7 @@ input[type="search"]::-webkit-search-cancel-button {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(/Images/grocery.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
 }
