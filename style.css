@@ -2,6 +2,8 @@
 
 :root {
   --green: #a3de83;
+  --light-white: #fcfefe;
+  --light-red: #ee6f57;
   --blue: #38817a;
   --dark-blue: #558c9c;
   --yellow: #f7f39a;
@@ -66,7 +68,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 4%;
-  background: #a3de8320;
+  background-color: #a3de8339;
   box-shadow: var(--box-shadow);
 }
 
@@ -105,7 +107,7 @@ section {
 }
 
 .header .icons div:hover {
-  background: var(--blue);
+  background: var(--light-red);
   color: #fff;
 }
 
@@ -336,10 +338,35 @@ input[type="search"]::-webkit-search-cancel-button {
 
 
 .home {
+    margin-top: 7.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/Images/grocery.jpg) no-repeat;
+    background: url(/Images/grocery.jpg) no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    color: white;
+}
+
+.home .content {
+    text-align: center;
+    width: 60rem;   
+}
+
+.home .content h3 {
+    color: var(--light-red);
+    font-size: 3rem;
+}
+
+.home .content h3 span {
+    color: var(--dark-blue);
+}
+
+.home .content p {
+    font-size: 2rem;
+    padding: 1.2rem 0;
+    line-height: 1.5;
+    color: var(--light-white);
 }
