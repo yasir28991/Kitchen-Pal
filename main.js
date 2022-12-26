@@ -2,6 +2,7 @@ let searchForm = document.querySelector(".search-form");
 let shoppingCart = document.querySelector(".shopping-cart");
 let loginForm = document.querySelector(".login-form");
 let navBar = document.querySelector(".navbar");
+const header = document.querySelector('.header')
 
 let searchBtn = document.getElementById("search-btn");
 let cartBtn = document.getElementById("cart-btn");
