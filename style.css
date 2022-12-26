@@ -10,8 +10,8 @@
   --black: #323232;
   --box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.105) inset;
   --border: 3px solid #323232;
-  --outline: 5px double rgba(50, 50, 50, 0.98);
-  --outline-hover: 8px double #a3de83;
+  --outline: 4px double var(--dark-blue);
+  --outline-hover: 8px double var(--green);
   --other-font: "Yaldevi", sans-serif;
 }
 
@@ -95,14 +95,15 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 2rem 4%;
-  background-color: #fff;
+  background-color: var(--blue);
+  color: whitesmoke;
   box-shadow: var(--box-shadow);
 }
 
 .header .logo {
   font-size: 2rem;
   font-weight: bolder;
-  color: var(--black);
+  color: var(--light-white);
 }
 
 /* .header .logo {
@@ -110,18 +111,19 @@ section {
 } */
 
 .header .logo i {
-  color: var(--blue);
+  color: whitesmoke;
 }
 
 .header .navbar a {
   font-size: 1.7rem;
   margin-inline: 1rem;
-  color: var(--black);
+  color: var(--light-white);
 }
 
 .header .navbar a:hover {
   font-weight: 600;
-  color: var(--dark-blue);
+  font-size: 2rem;
+  color: var(--light-red);
 }
 
 .header .icons div {
@@ -404,4 +406,47 @@ input[type="search"]::-webkit-search-cancel-button {
   padding: 1.2rem 0;
   line-height: 1.5;
   color: var(--light-white);
+}
+
+/* features section */
+
+.features .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap:1.5rem;
+}
+
+.features .box-container .box {
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  outline: var(--outline);
+  outline-offset: -1rem;
+  text-align: center;
+  box-shadow: var(--box-shadow)
+}
+
+.features .box-container .box:hover {
+  outline: var(--outline-hover);
+  outline-offset: -.5rem;
+}
+
+.features .box-container .box img {
+  margin: 1rem 0;
+  height: 15rem;
+}
+
+.features .box-container .box h3 {
+  font-size: 2.5rem;
+  line-height: 1;
+  color: var(--black);
+}
+
+.features .box-container .box p {
+  font-size: 1.5rem;
+  color: gray;
+  padding: 1em 0;
 }
