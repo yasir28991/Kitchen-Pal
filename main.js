@@ -2,7 +2,6 @@ let searchForm = document.querySelector(".search-form");
 let shoppingCart = document.querySelector(".shopping-cart");
 let loginForm = document.querySelector(".login-form");
 let navBar = document.querySelector(".navbar");
-const header = document.querySelector('.header')
 const searchInput = document.getElementById('search-box')
 const clearBtn = document.getElementById('clear-search')
 
