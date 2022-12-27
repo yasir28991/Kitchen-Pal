@@ -512,9 +512,49 @@ section {
   padding-block: .5rem;
 }
 
-.products .product-slider .box .rating i {
+.fa-star, .fa-star-half {
   font-size: 1.7rem;
   color: #FF9529;
   padding-block: .5rem;
 }
 
+/* categories */
+
+.categories .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 1.5rem;
+}
+
+.categories .box-container .box {
+  padding: 3rem 2rem;
+  border-radius: .5rem;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  outline: var(--outline);
+  outline-offset: -1rem;
+  text-align: center;
+}
+
+.categories .box-container .box:hover {
+  outline: var(--outline-hover);
+  outline-offset: -.5rem;
+}
+
+.categories .box-container .box img {
+  margin: 1rem 0;
+  height: 15rem;
+}
+
+.categories .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--black);
+  line-height: 1.8;
+}
+
+.categories .box-container .box p {
+  font-size: 1.7em;
+  color: gray;
+  line-height: 1.8;
+  padding-block: 1em;
+}
