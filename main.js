@@ -3,6 +3,8 @@ let shoppingCart = document.querySelector(".shopping-cart");
 let loginForm = document.querySelector(".login-form");
 let navBar = document.querySelector(".navbar");
 const header = document.querySelector('.header')
+const searchInput = document.getElementById('search-box')
+const clearBtn = document.getElementById('clear-search')
 
 let searchBtn = document.getElementById("search-btn");
 let cartBtn = document.getElementById("cart-btn");
@@ -65,3 +67,15 @@ var swiper = new Swiper(".product-slider", {
     },
   },
 });
+
+
+// clear search Button
+searchInput.addEventListener('input', () => {
+  clearBtn.style.display = searchInput.value ? 'block' : 'none'
+})
+
+clearBtn.addEventListener('click', e => {
+  searchInput.value = ''
+  clearBtn.style.display = 'none'
+  e.preventDefault()
+})

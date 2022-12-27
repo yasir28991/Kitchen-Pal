@@ -155,12 +155,12 @@ section {
   max-width: 50rem;
   width: 40rem;
   height: 4rem;
-  background-color: #fff;
+  background-color: #333;
   border-radius: 0.5rem;
   overflow: hidden;
   display: flex;
   align-items: center;
-  border: 2px solid var(--green);
+  border: 2px solid var(--light-red);
 }
 
 .header .search-form.active {
@@ -176,24 +176,40 @@ section {
   /* font-family: var(--other-font); */
   /* text-indent: 4px; */
   font-size: 1.6rem;
-  color: var(--black);
+  color: #eee;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.header .search-form input::placeholder {
+  color: rgba(245, 245, 245, 0.666);
+}
+
+.header .search-form #clear-search {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  top: 51%; 
+  right: 2.5%; 
+  transform: translateY(-50%); /* Center the clear button vertically within the search input */
+  font-size: 2rem;
+  color: #eee;
+  background-color: transparent;
 }
 
 .header .search-form label {
   font-size: 1.5rem;
   padding-left: 0.8rem;
-  color: var(--black);
+  color: #eee;
   cursor: pointer;
 }
 
 .header .search-form label:hover {
-  color: var(--blue);
+  color: var(--green);
 }
 
 input[type="search"]::-webkit-search-cancel-button {
-  cursor: pointer;
+  appearance: none;
 }
 
 .header .shopping-cart {
