@@ -86,7 +86,6 @@ section {
 }
 
 .header {
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -155,7 +154,7 @@ section {
   right: -110%;
   max-width: 50rem;
   width: 40rem;
-  height: 4rem;
+  height: 5rem;
   background-color: #333;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -176,7 +175,7 @@ section {
   text-transform: none;
   /* font-family: var(--other-font); */
   /* text-indent: 4px; */
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   color: #eee;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -199,7 +198,7 @@ section {
 }
 
 .header .search-form label {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding-left: 0.8rem;
   color: #eee;
   cursor: pointer;
