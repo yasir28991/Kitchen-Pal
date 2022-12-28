@@ -558,3 +558,43 @@ section {
   line-height: 1.8;
   padding-block: 1em;
 }
+
+/* review section */
+
+.review .review-slider {
+  padding: 1rem;
+
+}
+
+.review .review-slider .testimonial {
+  padding: 3rem 2rem;
+  border-radius: .5rem;
+  background: #fff;
+  box-shadow: var(--box-shadow);
+  outline: var(--outline);
+  outline-offset: -1rem;
+  text-align: center;
+}
+
+.review .review-slider .testimonial:hover {
+  outline: var(--outline-hover);
+  outline-offset: -.5rem;
+}
+
+.review .review-slider .testimonial img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+.review .review-slider .testimonial p {
+  padding-block: 1rem;
+  line-height: 1.8;
+  color: gray;
+  font-size: 1.5rem;
+}
+
+.review .review-slider .testimonial h3 {
+  padding-bottom: .5rem;
+  font-size: 2.2rem;
+  color: gray;
+}
