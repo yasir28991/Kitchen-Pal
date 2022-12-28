@@ -660,3 +660,74 @@ section {
   padding-block: .5rem;
   font-size: 1.5rem;
 }
+
+footer {
+  margin-top: 2rem;
+  /* padding-top: 2rem; */
+  background: var(--black);
+  color: #fff;
+  padding: 1rem;
+}
+
+footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+footer .footer-container .footer-box h3 {
+  font-size: 2.5rem;
+  color: white;
+  padding-block: 1rem;
+}
+
+footer i {
+  color: var(--light-red);
+}
+
+footer a {
+  display: block;
+  font-size: 1.5rem;
+  color: white;
+  padding-block: .5rem;
+  transition: transform 2s;
+}
+
+footer a:hover i {
+  transform: scale(1.2);
+  font-size: 1.7rem;
+  padding-right: .5rem;
+}
+
+footer .footer-box p {
+  line-height: 1.8;
+  font-size: 1.5rem;
+  color: rgb(198, 196, 196);
+}
+
+footer .share a {
+  font-size: 3rem;
+  width: 4rem;
+  height: 4rem;
+  background: #fff;
+  color: rgb(38, 35, 35);
+  border-radius: .5rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-inline: .5rem;
+}
+
+footer .share a:hover {
+  color: var(--light-red);
+}
+
+footer .footer-box .email {
+  margin-block: .7rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  background: #eee;
+  font-size: 1.6rem;
+  color: var(--black);
+  text-transform: none;
+  width: 100%;
+}
