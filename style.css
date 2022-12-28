@@ -598,3 +598,65 @@ section {
   font-size: 2.2rem;
   color: gray;
 }
+
+/* blog section */
+
+.blogs .blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  gap: 1.5rem;
+}
+
+.blogs .blog-container .blog {
+  overflow: hidden;
+  border-radius: .5rem;
+  box-sizing: var(--box-shadow);
+  background: #fff;
+}
+
+.blogs .blog-container .blog img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blogs .blog-container .blog .content {
+  padding: 2rem;
+}
+
+.blogs .blog-container .blog .content .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: var(--border);
+}
+
+.blogs .blog-container .blog .content .icons a {
+  color: gray;
+  font-size: 1.3rem;
+}
+
+.blogs .blog-container .blog .content .icons a:hover {
+  color: var(--light-red)
+}
+
+.blogs .blog-container .blog .content .icons i {
+  color: var(--blue);
+  padding-right: .5rem;
+}
+
+.blogs .blog-container .blog .content h3 {
+  line-height: 1.8;
+  color: var(--black);
+  padding-block: .5rem;
+  font-size: 2.2rem;
+}
+
+.blogs .blog-container .blog .content p {
+  line-height: 1.8;
+  color: gray;
+  padding-block: .5rem;
+  font-size: 1.5rem;
+}
