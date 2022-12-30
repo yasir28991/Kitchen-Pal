@@ -102,6 +102,18 @@
     </header>
     <!-- header section end -->
 
+    <div id="result-container">
+        <div class="s-item">
+          <div class="img-box">
+            <img src="/Images/Mango.png">
+          </div>
+          <div class="details">
+            <h3>Mango</h3>
+            <p class="price">$4/-</p>
+          </div>
+        </div>
+    </div>
+
     <!-- home section -->
     <section class="home" id="home">
       <div class="content">
@@ -174,62 +186,8 @@
       <h1 class="heading">Our <span>products</span></h1>
 
       <div class="swiper product-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide box">
-            <img src="/Images/products/product-1.png" alt="p-1" />
-            <h3>Fresh Imported Orange</h3>
-            <div class="price">$1.99/- - $8.99 /-</div>
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-            <a href="#" class="btn">Add to cart</a>
-          </div>
-
-          <div class="swiper-slide box">
-            <img src="/Images/products/product-2.png" alt="p-1" />
-            <h3>Fresh Onions</h3>
-            <div class="price">$1.99/- - $8.99 /-</div>
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-            <a href="#" class="btn">Add to cart</a>
-          </div>
-
-          <div class="swiper-slide box">
-            <img src="/Images/products/product-3.png" alt="p-1" />
-            <h3>Fresh meat</h3>
-            <div class="price">$1.99/- - $8.99 /-</div>
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-            <a href="#" class="btn">Add to cart</a>
-          </div>
-
-          <div class="swiper-slide box">
-            <img src="/Images/products/product-4.png" alt="p-1" />
-            <h3>Fresh cabbage</h3>
-            <div class="price">$1.99/- - $8.99 /-</div>
-            <div class="rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star-half"></i>
-            </div>
-            <a href="#" class="btn">Add to cart</a>
-          </div>
+        <div class="swiper-wrapper" id="product-container-one">
+          <!-- rendered through Javascript -->
         </div>
       </div>
 
@@ -542,6 +500,6 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     <!-- javascript -->
-    <script src="/main.js"></script>
+    <script src="/main.js" type="module"></script>
   </body>
 </html>
